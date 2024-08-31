@@ -62,7 +62,6 @@
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
-
         hyper {
             display-name = "TRI";
             bindings = <
@@ -73,8 +72,9 @@
                                                                                             &trans
             >;
         };
-        
-        conditional_layers {
+    };
+
+    conditional_layers {
         compatible = "zmk,conditional-layers";
 
         TRI {

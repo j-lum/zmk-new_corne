@@ -23,6 +23,15 @@
     behaviors {
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        trilayer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -45,7 +54,7 @@
 &kp ESCAPE    &kp F1          &kp F2    &kp F3    &kp F4    &kp F5     &kp LC(UP_ARROW)     &kp F6    &kp F7     &kp F8         &kp F9        &kp F10   &kp F11
 &trans        &kp LEFT_BRACE  &kp RBRC  &kp LBKT  &kp RBKT  &none      &kp LC(DOWN_ARROW)   &none     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END   &kp F12
 &trans        &kp F6          &kp F7    &kp F8    &kp F9    &kp F10    &kp LC(LEFT_ARROW)   &kp PLUS  &kp MINUS  &kp EQUAL      &kp ASTERISK  &kp BSLH  &kp K_CONTEXT_MENU
-&trans                                  &trans    &trans    &trans     &kp LC(RIGHT_ARROW)  &trans    &kp DEL    &kp CAPSLOCK
+&out OUT_TOG                            &trans    &trans    &trans     &kp LC(RIGHT_ARROW)  &trans    &kp DEL    &kp CAPSLOCK
                                                                        &kp LEFT_SHIFT
             >;
         };
@@ -71,15 +80,6 @@
 &none                                     &none            &none            &none           &rgb_ug RGB_SPD     &none        &none       &none
                                                                                             &trans
             >;
-        };
-    };
-
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        TRI {
-            if-layers = <1 2>;
-            then-layer = <3>;
         };
     };
 };

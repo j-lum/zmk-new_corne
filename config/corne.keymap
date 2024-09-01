@@ -1,4 +1,5 @@
-ntributors
+/*
+ * Copyright (c) 2020 The ZMK Contributors
  *
  * SPDX-License-Identifier: MIT
  */
@@ -53,7 +54,7 @@ ntributors
 &kp ESCAPE    &kp F1          &kp F2    &kp F3    &kp F4    &kp F5     &kp LC(UP_ARROW)     &kp F6    &kp F7     &kp F8         &kp F9        &kp F10   &kp F11
 &trans        &kp LEFT_BRACE  &kp RBRC  &kp LBKT  &kp RBKT  &none      &kp LC(DOWN_ARROW)   &none     &kp HOME   &kp PAGE_DOWN  &kp PAGE_UP   &kp END   &kp F12
 &trans        &kp F6          &kp F7    &kp F8    &kp F9    &kp F10    &kp LC(LEFT_ARROW)   &kp PLUS  &kp MINUS  &kp EQUAL      &kp ASTERISK  &kp BSLH  &kp K_CONTEXT_MENU
-&out OUT_TOG                            &trans    &trans    &trans     &kp LC(RIGHT_ARROW)  &trans    &trans    &kp CAPSLOCK
+&out OUT_TOG                            &trans    &trans    &trans     &kp LC(RIGHT_ARROW)  &trans    &trans     &kp CAPSLOCK
                                                                        &kp LEFT_SHIFT
             >;
         };
@@ -64,7 +65,7 @@ ntributors
 &kp ESCAPE  &kp N1    &kp N2     &kp N3     &kp N4        &kp N5        &trans   &kp N6    &kp N7     &kp N8     &kp N9        &kp N0     &kp HOME
 &trans      &kp N6    &kp N7     &kp N8     &kp N9        &kp N0        &trans   &none     &kp LEFT   &kp DOWN   &kp UP_ARROW  &kp RIGHT  &kp END
 &trans      &kp PLUS  &kp MINUS  &kp EQUAL  &kp ASTERISK  &kp SLASH     &trans   &kp PLUS  &kp MINUS  &kp EQUAL  &kp ASTERISK  &kp SLASH  &none
-&bt BT_CLR                           &trans     &trans        &kp DEL       &trans   &trans    &trans     &trans
+&bt BT_CLR                       &trans     &trans        &kp DEL       &trans   &trans    &trans     &trans
                                                                         &trans
             >;
             sensor-bindings = <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
